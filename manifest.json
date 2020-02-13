@@ -1,0 +1,32 @@
+{
+  "name": "S+",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "",
+  "author":"Kaj Schmidt, NTI-Gymnasiet Umeå, kaj.schmidt@ntig.se",
+  "icons": { "16": "img/logo-16.png",
+           "48": "img/logo-48.png",
+          "128": "img/logo-128.png" },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [{
+    "matches": ["https://*.schoolsoft.se/*"],
+    "js": [ "jquery-3.3.1.min.js", "bootstrap.bundle.min.js", "dresser.js"]
+  }],
+  "browser_action": {
+    "name": "S+",
+    "default_popup": "menu.html",
+    "default_title": "S+",
+    "default_icon": {
+      "16": "img/logo-16.png",
+      "32": "img/logo-32.png"
+    }
+  },
+  "permissions": [
+    "https://sms.schoolsoft.se/*"
+  ]
+}
