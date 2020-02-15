@@ -14,8 +14,9 @@
     "persistent": true
   },
   "content_scripts": [{
-    "matches": ["https://*.schoolsoft.se/*"],
-    "js": [ "jquery-3.3.1.min.js", "bootstrap.bundle.min.js", "dresser.js"]
+    "matches": ["https://*.schoolsoft.se/nti/jsp/teacher/*"],
+    "js": [ "jquery-3.3.1.min.js", "bootstrap.bundle.min.js", "dresser.js"],
+    "css": ["bootstrap.min.css", "dresser.css"]
   }],
   "browser_action": {
     "name": "S+",
@@ -23,10 +24,13 @@
     "default_title": "S+",
     "default_icon": {
       "16": "img/logo-16.png",
-      "32": "img/logo-32.png"
+      "32": "img/logo-32.png",
+      "48": "img/logo-48.png",
+      "128": "img/logo-128.png"
     }
   },
   "permissions": [
-    "https://sms.schoolsoft.se/*"
+    "https://*.schoolsoft.se/*",
+    "activeTab"
   ]
 }

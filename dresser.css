@@ -1,0 +1,184 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium Web Light'), local('TitilliumWeb-Light'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzY4SY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium Web Light'), local('TitilliumWeb-Light'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGItzYw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPecZTIAOhVxoMyOr9n_E7fdM3mDbRS.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPecZTIAOhVxoMyOr9n_E7fdMPmDQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Titillium Web SemiBold'), local('TitilliumWeb-SemiBold'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzY4SY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Titillium Web SemiBold'), local('TitilliumWeb-SemiBold'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzYw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+#sidebar-root {
+
+}
+
+#sidebar-root nav {
+	background-color: #222222;
+	color: #f0f0f0;
+	font-family:"Titillium Web";
+    font-weight:Regular;
+    box-shadow:none;
+    width:265px;
+}
+
+#sidebar-root nav div {
+    border:none;
+}
+
+#sidebar-root nav ul ul li button img:first-child {
+    display: none;
+}
+
+#teacher-header-root header{
+  display: none;
+    background-color: #ffffff;
+}
+
+#teacher-header-root header div button {
+    
+}
+
+#content-pos {
+    background-color: #f0f0f0;
+}
+
+/* Carddecks */
+.flex-row {
+  margin-bottom: 10px;
+}
+
+
+/* Carddeck: Days */
+.card-day {
+    width:200px;
+    margin-right:10px;
+}
+
+.card-day .card-header {
+    font-family:"Titillium Web";
+    font-weight:Bold;
+    font-size:1.2em;
+    background-color:#dd0890;
+    color:#ffffff;
+}
+
+.card-day .list-group {
+    font-family:"Open Sans";
+    background-color:#ffffff;
+    color:#000000;
+}
+
+.card-day-list-item {
+  padding: 0;
+  margin: 0;
+}
+.card-day-list-body {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;  
+}
+
+.card-day-list-time {
+  width: 40px;
+  font-family:"Titillium Web";
+  font-weight:bolder;
+  font-size:10px;
+  background-color:#f0f0f0;
+  color:#000000;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+.card-day-list-name {
+
+  overflow: hidden;
+}
+
+.card-day-list-group {
+  width: 40px;
+  font-family:"Titillium Web";
+  font-weight:bolder;
+  font-size:10px;
+  background-color:#222222;
+  color:#ffffff;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Carddeck: Tools */
+.card-tool {
+  width:200px;
+  margin-right:10px;
+}
+
+.card-tool .card-body {
+  font-family:"Titillium Web";
+  font-weight:Bold;
+  font-size:1.2em;
+  background-color:#dd0890;
+  color:#ffffff;
+}
+
+
