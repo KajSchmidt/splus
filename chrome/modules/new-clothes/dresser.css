@@ -107,8 +107,12 @@
 
 /* Carddeck: Days */
 .card-day {
-    width:200px;
     margin-right:10px;
+    padding:0;
+}
+
+.card-day:last-child {
+  margin-right:0;
 }
 
 .card-day .card-header {
@@ -152,7 +156,12 @@
 }
 
 .card-day-list-name {
-
+  font-family:"Titillium Web";
+  font-weight:bolder;
+  font-size:10px;
+  background-color:#ffffff;
+  color:#000000;
+  line-height: 20px;
   overflow: hidden;
 }
 
@@ -161,10 +170,34 @@
   font-family:"Titillium Web";
   font-weight:bolder;
   font-size:10px;
-  background-color:#222222;
-  color:#ffffff;
   overflow: hidden;
   margin: 0;
+}
+
+.card-day-list-group-te {
+  background-color:#dd0890;
+  color:#ffffff;
+}
+
+.card-day-list-group-ee {
+  background-color:#4b0082;
+  color:#ffffff;
+}
+
+.card-day-list-group-es {
+  background-color:#200c9c;
+  color:#ffffff;
+}
+
+.card-day-list-group-ha {
+  background-color:#0de1ec;
+  color:#000000;
+}
+
+.card-day-list-group-xx {
+  background-color:#ffffff;
+  color:#ffffff;
+  font-size: 0;
 }
 
 /* Carddeck: Tools */
@@ -181,4 +214,14 @@
   color:#ffffff;
 }
 
+/*
+
+  #222222 
+  #f0f0f0
+  #dd0890 (Magenta)
+  #4b0082 (Ultraviolett)
+  #0de1ec (Turkosmint)
+  #200c9c (Ultramarin)
+
+*/
 

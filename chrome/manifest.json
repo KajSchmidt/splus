@@ -14,10 +14,11 @@
     "persistent": true
   },
   "content_scripts": [{
-    "matches": ["https://*.schoolsoft.se/nti/jsp/teacher/*"],
-    "js": [ "jquery-3.3.1.min.js", "bootstrap.bundle.min.js", "dresser.js"],
-    "css": ["bootstrap.min.css", "dresser.css"]
+    "matches": ["https://*.schoolsoft.se/nti/*"],
+    "js": [ "jquery-3.3.1.min.js", "bootstrap.bundle.min.js", "injector.js"],
+    "css": ["bootstrap.min.css"]
   }],
+  "web_accessible_resources": ["modules/course-list-fix/course-list-fix.js"],
   "browser_action": {
     "name": "S+",
     "default_popup": "menu.html",
