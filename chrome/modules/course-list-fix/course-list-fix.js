@@ -1128,7 +1128,7 @@ let site_url = document.location.href;
 
 //Teachers View
 
-if (site_url.includes("teacher")) { 
+if (site_url.includes("/teacher/")) { 
 
   let class_name = $("#student_chosen > a > span").text().substring(0, 4);
 
@@ -1155,7 +1155,7 @@ if (site_url.includes("teacher")) {
 
 //Student View
 
-if (site_url.includes("student")) { 
+if (site_url.includes("/student/")) { 
   $("#contAll_content > table > tbody > tr > td > a > b").each(function(){
       let course_code = $(this).text();
       let course_object = code_to_course.filter(function (course) { return course[0] == course_code});
