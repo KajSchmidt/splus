@@ -1124,41 +1124,50 @@ var course_to_year = {
 
 /* Translator */
 
+let site_url = document.location.href;
 
 //Teachers View
 
-let class_name = $("#student_chosen > a > span").text().substring(0, 4);
+if (site_url.includes("teacher")) { 
 
-$("#full2.full > table > tbody > tr.longlistheader td").each(function(){
-    $(this).replaceWith("<th>"+ $(this).text() +"</th>");
-});
-$("#full2.full > table > tbody > tr.longlistheader").prepend("<th></th>");
+  let class_name = $("#student_chosen > a > span").text().substring(0, 4);
 
-$("#full2.full > table").attr('id', 'course_table');
+  $("#full2.full > table > tbody > tr.longlistheader td").each(function(){
+      $(this).replaceWith("<th>"+ $(this).text() +"</th>");
+  });
+  $("#full2.full > table > tbody > tr.longlistheader").prepend("<th></th>");
 
-$("#full2.full > table > tbody > tr > td.longlistheader").each(function(){
-    let course_code = $(this).text();
-    let course_object = code_to_course.filter(function (course) { return course[0]== course_code});
-    if (course_object[0][0]) {
-        $(this).empty();
-        $(this).html(course_object[0][1]);
-        $(this).parent().prepend("<td class='value'>" + get_year(class_name, course_object[0][0]) + "</td>");
-    }
-});
+  $("#full2.full > table").attr('id', 'course_table');
+
+  $("#full2.full > table > tbody > tr > td.longlistheader").each(function(){
+      let course_code = $(this).text();
+      let course_object = code_to_course.filter(function (course) { return course[0]== course_code});
+      if (course_object[0][0]) {
+          $(this).empty();
+          $(this).html(course_object[0][1]);
+          $(this).parent().prepend("<td class='value'>" + get_year(class_name, course_object[0][0]) + "</td>");
+      }
+  });
+
+  sort_table("course_table");
+
+};
 
 //Student View
-$("#contAll_content > table > tbody > tr > td > a > b").each(function(){
-    let course_code = $(this).text();
-    let course_object = code_to_course.filter(function (course) { return course[0] == course_code});
-    if (course_object[0][0]) {
-        $(this).empty();
-        $(this).html(course_object[0][1]);
-    }
-});
+
+if (site_url.includes("student")) { 
+  $("#contAll_content > table > tbody > tr > td > a > b").each(function(){
+      let course_code = $(this).text();
+      let course_object = code_to_course.filter(function (course) { return course[0] == course_code});
+      if (course_object[0][0]) {
+          $(this).empty();
+          $(this).html(course_object[0][1]);
+      }
+  });
+};
 
 
 
-sort_table();
 
 
 function get_year(class_name, course_code) {
@@ -1170,9 +1179,9 @@ function get_year(class_name, course_code) {
 };
 
 
-function sort_table() {
+function sort_table(target_table) {
     var table, rows, switching, i, x, y, shouldSwitch;
-    table = document.getElementById("course_table");
+    table = document.getElementById(target_table);
     switching = true;
     /* Make a loop that will continue until
     no switching has been done: */
