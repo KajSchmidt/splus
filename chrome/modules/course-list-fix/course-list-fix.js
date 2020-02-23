@@ -1118,7 +1118,8 @@ var course_to_year = {
           []],
   "HA17":[[],
           [],
-          []]
+          []],
+  "0000":[[],[],[]]
 };
 
 
@@ -1130,12 +1131,13 @@ let site_url = document.location.href;
 
 if (site_url.includes("/teacher/")) { 
 
-  let class_name = $("#student_chosen > a > span").text().substring(0, 4);
+  //var class_name = $("#student_chosen > a > span").text().substring(0, 4);
+  
 
-  $("#full2.full > table > tbody > tr.longlistheader td").each(function(){
-      $(this).replaceWith("<th>"+ $(this).text() +"</th>");
-  });
-  $("#full2.full > table > tbody > tr.longlistheader").prepend("<th></th>");
+  //$("#full2.full > table > tbody > tr.longlistheader td").each(function(){
+  //    $(this).replaceWith("<th>"+ $(this).text() +"</th>");
+  //});
+  //$("#full2.full > table > tbody > tr.longlistheader").prepend("<th></th>");
 
   $("#full2.full > table").attr('id', 'course_table');
 
@@ -1145,11 +1147,11 @@ if (site_url.includes("/teacher/")) {
       if (course_object[0][0]) {
           $(this).empty();
           $(this).html(course_object[0][1]);
-          $(this).parent().prepend("<td class='value'>" + get_year(class_name, course_object[0][0]) + "</td>");
+          //$(this).parent().prepend("<td class='value'>" + get_year(class_name, course_object[0][0]) + "</td>");
       }
   });
 
-  sort_table("course_table");
+  //sort_table("course_table");
 
 };
 
