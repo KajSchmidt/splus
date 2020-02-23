@@ -102,7 +102,7 @@ $("#contAll_content > table > tbody > tr > td > a > b").each(function(){
     let course_object = code_to_course.filter(function (course) { return course[0] == course_code});
     if (course_object[0][0]) {
         $(this).empty();
-        $(this).html(course_object[0][0]);
+        $(this).html(course_object[0][1]);
     }
 });
 
