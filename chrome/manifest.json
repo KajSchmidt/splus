@@ -15,9 +15,10 @@
   },
   "content_scripts": [{
     "matches": ["https://*.schoolsoft.se/nti/*"],
-    "js": [ "jquery-3.3.1.min.js", "injector.js"]
+    "js": [ "jquery-3.3.1.min.js","bootstrap.bundle.min.js", "injector.js"],
+    "css": ["bootstrap.min.css"]
   }],
-  "web_accessible_resources": ["modules/course-list-fix/course-list-fix.js"],
+  "web_accessible_resources": ["modules/*"],
   "browser_action": {
     "name": "S+",
     "default_popup": "menu.html",
